@@ -39,6 +39,7 @@ header{
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 120px;
+    background-size: cover;
     height: 685px;
     position: relative;
 }
@@ -46,10 +47,24 @@ header{
 #jumbo > div{
     position: absolute;
     bottom:50px;
-    left: 50px;
     max-width: 360px;
+    margin-left:50px
 }
 
-.hero-banner img{
+.hero-banner{
     max-width: 220px;
+}
+
+.primary-games-items{
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.primary-games-items img{
+    min-width: 200px;
+}
+#primary-games-list .row{
+    margin: 20px 0;
+
 }
