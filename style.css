@@ -1,6 +1,19 @@
+/*Reset*/
 img{max-width: 100%;}
 
+/*Helpers*/
+.ms_btn-orange{
+    background-color: #CD3D0F;
+    color: white;
+    display: inline-block;
+    width: fit-content;
+}
 /*HEADER*/
+header{
+    position: fixed;
+    top:0;
+    width: 100%;
+}
 .sony-logo{
     width: 90px;
     margin: 0;
@@ -20,3 +33,23 @@ img{max-width: 100%;}
     
 }
 
+/*jumbo*/
+#jumbo{
+    background-image: url('img/jumbo-bg.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 120px;
+    height: 685px;
+    position: relative;
+}
+
+#jumbo > div{
+    position: absolute;
+    bottom:50px;
+    left: 50px;
+    max-width: 360px;
+}
+
+.hero-banner img{
+    max-width: 220px;
+}
