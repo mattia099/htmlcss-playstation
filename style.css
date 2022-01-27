@@ -1,0 +1,22 @@
+img{max-width: 100%;}
+
+/*HEADER*/
+.sony-logo{
+    width: 90px;
+    margin: 0;
+    font-size: 0;
+}
+
+.navbar-light .navbar-nav .nav-link, .nav-link{
+    color: black;
+    font-weight: 600;
+}
+
+.search_icon{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+
