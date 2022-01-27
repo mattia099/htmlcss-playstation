@@ -1,9 +1,7 @@
 /*Reset*/
 img{max-width: 100%;}
 
-.container{
-    max-width: 1500px;
-}
+
 
 /*Helpers*/
 .ms_btn-orange{
@@ -13,9 +11,26 @@ img{max-width: 100%;}
     width: fit-content;
 }
 
+.ms_btn-w-tr{
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+}
+
 .ms_mt-150{
     margin-top: 150px;
 }
+
+.ms_sub-title{
+    margin:0;
+    color: #787878;
+    font-size: 1.3rem;
+    line-height: initial;
+}
+
+.ms_title h2{
+    font-size: 3rem;
+}
+
 
 .ms_br{border-radius: 20px; overflow: hidden;}
 /*HEADER*/
@@ -70,7 +85,6 @@ header{
     position: absolute;
     bottom:50px;
     max-width: 360px;
-    margin-left:50px
 }
 
 .hero-banner{
@@ -92,31 +106,39 @@ header{
 
 /*Playstation 5*/
 
-#playstation-5 p{
-    margin:0;
-    color: #848484;
-    font-size: 1.3rem
-}
-
-#playstation-5 h2{
-    margin-bottom: 20px;
-    font-size: 3rem;
-}
-
 
 #playstation-5 .gx-5{
     --bs-gutter-x: 8rem; /*gap-padding colonne*/
 }
 
 @media screen and (max-width:1200px) {
-    h5{display: none;}
+    #playstation-5 h5{display: none;}
     #playstation-5 .gx-5{
         --bs-gutter-x: 2rem; /*gap-padding colonne*/
     }
+    #playstation-plus .col-6{
+        display: none;
+    }
+
 }
 
 /*Jumbo secondary*/
 #jumbo-secondary-games-list{
     background-image: ;
 }
+
+#playstation-5 .gx-5{
+    --bs-gutter-x: 8rem; /*gap-padding colonne*/
+}
+
+
+/*Playstation-plus*/
+#playstation-plus{
+    background-color: #BEBCBB;
+}
+
+.logo-plus{
+    width: 360px;
+}
+
 
