@@ -1,6 +1,10 @@
 /*Reset*/
 img{max-width: 100%;}
 
+.container{
+    max-width: 1500px;
+}
+
 /*Helpers*/
 .ms_btn-orange{
     background-color: #CD3D0F;
@@ -8,11 +12,16 @@ img{max-width: 100%;}
     display: inline-block;
     width: fit-content;
 }
+
+.ms_mt-100{
+    margin-top: 100px;
+}
 /*HEADER*/
 header{
     position: fixed;
     top:0;
     width: 100%;
+    z-index: 99999;
 }
 .sony-logo{
     width: 90px;
@@ -40,11 +49,22 @@ header{
     background-position-x: center;
     background-position-y: 120px;
     background-size: cover;
-    height: 685px;
+    width: 100%;
+    height: 730px;
     position: relative;
 }
 
-#jumbo > div{
+#jumbo-secondary{
+    background-image: url('img/it-takes-two-hero-banner-desktop.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    width: 100%;
+    height: 730px;
+    position: relative;
+}
+
+.jumbo-content{
     position: absolute;
     bottom:50px;
     max-width: 360px;
@@ -52,9 +72,10 @@ header{
 }
 
 .hero-banner{
-    max-width: 220px;
+    max-width: 100%;
 }
 
+/*game list*/
 .primary-games-items{
     width: 100%;
     border-radius: 20px;
@@ -62,9 +83,34 @@ header{
 }
 
 .primary-games-items img{
-    min-width: 200px;
+    min-width: 280px;
 }
 #primary-games-list .row{
     margin: 20px 0;
+}
 
+
+/*Playstation 5*/
+
+#playstation-5 p{
+    margin:0;
+    color: #848484;
+    font-size: 1.3rem
+}
+
+#playstation-5 h2{
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+
+#playstation-5 .gx-5{
+    --bs-gutter-x: 8rem; /*gap-padding colonne*/
+}
+
+@media screen and (max-width:1200px) {
+    h5{display: none;}
+    #playstation-5 .gx-5{
+        --bs-gutter-x: 2rem; /*gap-padding colonne*/
+    }
 }
