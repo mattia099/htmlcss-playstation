@@ -13,9 +13,11 @@ img{max-width: 100%;}
     width: fit-content;
 }
 
-.ms_mt-100{
-    margin-top: 100px;
+.ms_mt-150{
+    margin-top: 150px;
 }
+
+.ms_br{border-radius: 20px; overflow: hidden;}
 /*HEADER*/
 header{
     position: fixed;
@@ -78,14 +80,12 @@ header{
 /*game list*/
 .primary-games-items{
     width: 100%;
-    border-radius: 20px;
-    overflow: hidden;
 }
 
 .primary-games-items img{
     min-width: 280px;
 }
-#primary-games-list .row{
+#jumbo-games-list .row{
     margin: 20px 0;
 }
 
@@ -114,3 +114,9 @@ header{
         --bs-gutter-x: 2rem; /*gap-padding colonne*/
     }
 }
+
+/*Jumbo secondary*/
+#jumbo-secondary-games-list{
+    background-image: ;
+}
+
