@@ -5,6 +5,10 @@ main{
     width: 100%;
 }
 
+ul {
+    list-style: none;
+}
+
 /*Helpers*/
 .ms_btn-orange{
     background-color: #CD3D0F;
@@ -111,22 +115,7 @@ header{
 /*Playstation 5*/
 
 
-@media screen and (max-width:992px) {
-    #playstation-5 h5{display: none;}
-}
 
-@media screen and (max-width:1200px) {
-    
-    #playstation-plus .col-6, #playstation-now .col-6{
-        display: none;
-    }
-}
-
-@media screen and (min-width:1200px){
-    .ps5_item figure{
-        padding:40px
-    }
-}
 
 /*Jumbo secondary*/
 
@@ -155,3 +144,49 @@ header{
     padding:0 20px;
 }
 
+
+
+/*FOOTER*/
+footer{
+    background-color: #00439C;
+}
+
+.sony-logo{
+    width: 100px;
+}
+
+.sie-logo{
+    width: 150px;
+}
+
+footer ul{
+    column-count: 3;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width:768px){
+    .social-container{
+        padding:0;
+    }
+    footer ul{
+        column-count: 1!important;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #playstation-5 h5{display: none;}
+}
+
+@media screen and (max-width:1200px) {
+    
+    #playstation-plus .col-6, #playstation-now .col-6{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .ps5_item figure{
+        padding:40px
+    }
+}
