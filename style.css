@@ -1,7 +1,9 @@
 /*Reset*/
 img{max-width: 100%;}
 
-
+main{
+    width: 100%;
+}
 
 /*Helpers*/
 .ms_btn-orange{
@@ -13,7 +15,7 @@ img{max-width: 100%;}
 
 .ms_btn-w-tr{
     background-color: rgba(255, 255, 255, 0.5);
-    font-weight: 600;
+    
 }
 
 .ms_mt-150{
@@ -29,6 +31,10 @@ img{max-width: 100%;}
 
 .ms_title h2{
     font-size: 3rem;
+}
+
+.ms_fw-500{
+    font-weight: 500;
 }
 
 
@@ -56,30 +62,28 @@ header{
     height: 40px;
     font-size: 20px;
     margin-left: 10px;
-    
 }
 
 /*jumbo*/
-#jumbo{
-    background-image: url('img/jumbo-bg.png');
+.game-banner{
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: 120px;
+    background-position-y: 110px;
     background-size: cover;
     width: 100%;
     height: 730px;
     position: relative;
 }
 
-#jumbo-secondary{
-    background-image: url('img/it-takes-two-hero-banner-desktop.jpg');
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: cover;
-    width: 100%;
-    height: 730px;
-    position: relative;
+.return{
+    background-image: url('img/jumbo-bg.png');
 }
+
+.it_take_two{
+    background-image: url('img/it-takes-two-hero-banner-desktop.jpg');
+    background-position-y: 0;
+}
+
 
 .jumbo-content{
     position: absolute;
@@ -88,7 +92,7 @@ header{
 }
 
 .hero-banner{
-    max-width: 100%;
+    max-width: 300px;
 }
 
 /*game list*/
@@ -97,7 +101,7 @@ header{
 }
 
 .primary-games-items img{
-    min-width: 280px;
+    
 }
 #jumbo-games-list .row{
     margin: 20px 0;
@@ -107,25 +111,25 @@ header{
 /*Playstation 5*/
 
 
-#playstation-5 .gx-5{
-    --bs-gutter-x: 8rem; /*gap-padding colonne*/
+@media screen and (max-width:992px) {
+    #playstation-5 h5{display: none;}
 }
 
 @media screen and (max-width:1200px) {
-    #playstation-5 h5{display: none;}
-    #playstation-5 .gx-5{
-        --bs-gutter-x: 2rem; /*gap-padding colonne*/
-    }
-    #playstation-plus .col-6{
+    
+    #playstation-plus .col-6, #playstation-now .col-6{
         display: none;
     }
+}
 
+@media screen and (min-width:1200px){
+    .ps5_item figure{
+        padding:40px
+    }
 }
 
 /*Jumbo secondary*/
-#jumbo-secondary-games-list{
-    background-image: ;
-}
+
 
 #playstation-5 .gx-5{
     --bs-gutter-x: 8rem; /*gap-padding colonne*/
@@ -140,5 +144,10 @@ header{
 .logo-plus{
     width: 360px;
 }
+
+#playstation-now{
+    background-color: #161C3B;
+}
+
 
 
